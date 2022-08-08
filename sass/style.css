@@ -68,18 +68,10 @@ a {
 
 .services {
     width: 100%;
-    height: 600px;
-}
-
-.services h2, h5 {
-    position: relative;
-    bottom: 100px;
-    text-align: center;
-    margin-right: 25%;
-    margin-bottom: 15px;
 }
 
 .services h2 {
+    text-align: center;
     color:black;
     font-size: 50px;
     font-family: 'Anton', sans-serif;
@@ -87,31 +79,29 @@ a {
 }
 
 .services h5 {
+    text-align: center;
     font-family: 'Benne', serif;
     font-size: 15px;
     font-weight: 100;
 }
 
 .services .container {
-    padding-left: 18%;
-    padding-top: 10%;
-    margin: auto;
     text-align: center;
 }
 
 
-.col-3 {
+.col-4 {
     margin-bottom: 80px;
 }
 
 
-.col-3 h4 {
+.col-4 h4 {
     font-family: 'Anton', sans-serif;
     font-size: 20px;
     font-weight: 600;
 }
 
-.col-3 h6 {
+.col-4 h6 {
     font-family: 'Benne', serif;
     font-size: 15px;
     font-weight: 100;
@@ -134,6 +124,13 @@ a {
     height: 1300px;
 }
 
+.work .row {
+    position: relative;
+    left: 60px;
+    top: 100px;
+    padding-bottom: 30px;
+}
+
 .work h2 {
     font-family: 'Anton', sans-serif;
     font-size: 50px;
@@ -150,22 +147,16 @@ a {
     position: relative;
     text-align: center;
     top: 60px;
-    left: 165px;
-}
-
-.work .row {
-    position: relative;
-    align-items: center;
-    top: 140px;
-    left: 180px;
 }
 
 img {
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
 
 .box {
+    position: relative;
     width: 300px;
     height: 400px;
     background-color:white;
@@ -174,8 +165,8 @@ img {
 .box h4 {
     position: relative;
     text-align: center;
-    bottom: 15px;
     font-family: 'Anton', sans-serif;
+    bottom: 5px;
 }
 
 .box h6 {
@@ -183,8 +174,7 @@ img {
     position: relative;
     text-align: center;
     font-size: 14px;
-    padding-top: 5px;
-    bottom: 40px;
+    bottom: 25px;
 }
 
 /* Footer */
@@ -209,10 +199,10 @@ footer {
     font-family: 'Barlow', sans-serif;
     font-weight: 100;
     font-size: 15px;
-    margin-left: 280px;
+    margin-left: 170px;
 }
 
-@media (max-width: 767px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
  
     /* Navigation */
 
@@ -258,16 +248,19 @@ ul li {
 .services h2, h5 {
         padding-top: 30px;
         position: relative;
+        top: 2px;
+        left: 80px;
         bottom: 100px;
         margin-right: 150px;
         margin-bottom: 15px;
     }
 
-    /* Portfolio */
+/* Portfolio */
 
     .work {
+        display: flex;
         width: 100%;
-        height: 2400px;
+        height: 2300px;
     }
 
     .work h5 {
@@ -281,6 +274,7 @@ ul li {
     .work .row {
         position: relative;
         align-items: center;
+        padding-bottom: 10px;
         top: 140px;
         left: 25px;
     }
@@ -293,6 +287,7 @@ ul li {
     .box {
         position: relative;
         left: 20%;
+        margin-top: 15px;
         padding-bottom: 20px;
         width: 250px;
         height: 300px;
@@ -307,11 +302,7 @@ ul li {
     
     .text-footer h6 {
         position: relative;
-        right: 90px;
-        top: 40px;
-        font-family: 'Barlow', sans-serif;
-        font-weight: 100;
-        font-size: 15px;
-        margin-left: 280px;
+        margin-bottom: 5px;
     }
+
 }
